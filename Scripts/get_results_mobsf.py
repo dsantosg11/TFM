@@ -27,6 +27,9 @@ def get_table(id,tree):
         result= result + new
     return result
 
+def save_dataframe(df, file_name):
+    df.to_csv(file_name, encoding='utf-8', index=False)
+
 def DataFrame_to_image(data, css, outputfile, format="png"):
     #Code for this function from: https://medium.com/@andy.lane/convert-pandas-dataframes-to-images-using-imgkit-5da7e5108d55
     '''
@@ -98,7 +101,9 @@ def get_content (url):
     for i, df in enumerate(df_list):
         #And we store them as a png image
         route_image = "/Users/dass/Tools/Results/tables_static/images/"+filename+'_table_'+str(i)+'.png'
+        route_csv_df = "/Users/dass/Tools/Results/tables_static/df/"+filename+'_table_'+str(i)+'.csv'
         DataFrame_to_image(df,'',route_image)
+        save_dataframe(df,route_csv_df)
         #print (df)
         #print(render_mpl_table(df, header_columns=0, col_width=3.0))
         #df.to_csv('table {}.csv'.format(i))

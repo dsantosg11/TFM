@@ -4,15 +4,16 @@ import sys
 file_name = sys.argv[1]
 
 directory = '/Users/dass/Tools/Results/Codigo_fuente_apps/'+ file_name
+paquetes = '/Users/dass/Tools/Results/lista_paquetes.txt'
 
-print ('Se comienza a analizar el Manifest de la aplicacion '+ file_name)
 data = ''
 with open(directory+'/AndroidManifest.xml','r') as f:
     data = f.read()
 dom = parseString(data)
 manifest_element = dom.documentElement
 package = manifest_element.getAttribute('package')
-print(package)
+with open(paquetes,'a') as paq:
+    paq.write(package)
 nodes_permission = dom.getElementsByTagName('uses-permission')
 nodes_feature = dom.getElementsByTagName('uses-feature')
 permissions = []
@@ -81,5 +82,3 @@ if "android.hardware.sensor.stepcounter" in features:
     print("Esta app puede utilizar el contador de pasos del dispositivo.")
 if "android.hardware.sensor.stepdetector" in features:
     print("Esta app puede utilizar el detector de pasos del dispositivo.")
-
-print ('Se termina de analizar el Manifest de la aplicacion '+ file_name)

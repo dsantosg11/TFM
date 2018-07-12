@@ -16,7 +16,9 @@ for i in $(ls | egrep -i '*\.apk'); do
     bash $DIRECTORY_SCRIPTS/preprocess/PreprocessAPK.sh $i;
     bash $DIRECTORY_SCRIPTS/preprocess/PreprocessDataset.sh $NOMBRE;
     mv $NOMBRE $DIRECTORY_PREP_APKS/$NOMBRE
+    echo 'Se comienza a analizar el Manifest de la aplicacion $NOMBRE'
     python $DIRECTORY_CODE/get_permissions.py $NOMBRE
+    echo 'Se termina de analizar el Manifest de la aplicacion $NOMBRE'
 done
 
 echo "$COUNTER archivos procesados. Comprobando si queda algún archivo por descompilar..."

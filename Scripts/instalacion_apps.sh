@@ -11,4 +11,4 @@ for i in $(ls | egrep -i '*\.apk'); do
     echo "Aplicacion $NOMBRE instalada en el terminal via adb."
 done
 
-echo "$COUNTER aplicaciones instaladas en el terminal via adb. Proceso terminado."
+echo "$COUNTER aplicaciones instaladas en el terminal via adb. Instalación terminada"

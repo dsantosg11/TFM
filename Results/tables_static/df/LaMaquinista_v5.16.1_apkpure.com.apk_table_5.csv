@@ -1,0 +1,66 @@
+URL,File
+https://settings.crashlytics.com/spi/v2/platforms/android/apps/%s/settings,io/fabric/sdk/android/services/settings/Settings.java
+https://e.crashlytics.com/spi/v2/events,io/fabric/sdk/android/services/settings/DefaultSettingsJsonTransform.java
+https://e.crashlytics.com/spi/v2/events,io/fabric/sdk/android/services/settings/SettingsJsonConstants.java
+javascript:boltswebviewapplinkresolverresult.setvalue((function(),bolts/WebViewAppLinkResolver.java
+http://data.altbeacon.org/android-distance.json,org/altbeacon/beacon/BeaconManager.java
+https://www.  http://www.,org/altbeacon/beacon/utils/UrlBeaconUrlCompressor.java
+http://www.slf4j.org/codes.html#no_static_mdc_binder  http://www.slf4j.org/codes.html#null_mdca,org/slf4j/MDC.java
+http://www.slf4j.org/codes.html  http://www.slf4j.org/codes.html#loggernamemismatch  http://www.slf4j.org/codes.html#multiple_bindings  http://www.slf4j.org/codes.html#staticloggerbinder  http://www.slf4j.org/codes.html#null_lf  http://www.slf4j.org/codes.html#replay  http://www.slf4j.org/codes.html#substitutelogger  http://www.slf4j.org/codes.html#unsuccessfulinit  http://www.slf4j.org/codes.html#version_mismatch,org/slf4j/LoggerFactory.java
+http://logback.qos.ch/codes.html#null_cs,org/slf4j/impl/StaticLoggerBinder.java
+http://localhost/,retrofit2/Response.java
+http://logback.qos.ch/codes.html  http://logback.qos.ch/codes.html#tbr_fnp_not_set,ch/qos/logback/core/CoreConstants.java
+http://logback.qos.ch/codes.html#layoutinsteadofencoder,ch/qos/logback/core/OutputStreamAppender.java
+http://logback.qos.ch/codes.html#1andonly1,ch/qos/logback/core/sift/SiftingJoranConfiguratorBase.java
+http://xml.org/sax/features/validation  http://xml.org/sax/features/namespaces,ch/qos/logback/core/joran/event/SaxEventRecorder.java
+http://logback.qos.ch/codes.html#appender_order,ch/qos/logback/core/joran/action/AppenderRefAction.java
+http://logback.qos.ch/codes.html#missingrightparenthesis,ch/qos/logback/core/pattern/parser/Parser.java
+http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd,ch/qos/logback/core/html/HTMLLayoutBase.java
+http://logback.qos.ch/codes.html#sbtp_size_format,ch/qos/logback/core/rolling/SizeBasedTriggeringPolicy.java
+http://logback.qos.ch/codes.html#rfa_no_tp  http://logback.qos.ch/codes.html#rfa_no_rp  http://logback.qos.ch/codes.html#rfa_collision  http://logback.qos.ch/codes.html#rfa_file_after,ch/qos/logback/core/rolling/RollingFileAppender.java
+http://logback.qos.ch/codes.html#tbr_fnp_prudent_unsupported  http://logback.qos.ch/codes.html#fwrp_parentfilename_not_set  http://logback.qos.ch/codes.html#tbr_fnp_not_set,ch/qos/logback/core/rolling/FixedWindowRollingPolicy.java
+http://logback.qos.ch/codes.html#tbr_fnp_not_set,ch/qos/logback/core/rolling/TimeBasedRollingPolicy.java
+http://logback.qos.ch/codes.html#renamingerror,ch/qos/logback/core/rolling/helper/RenameUtil.java
+http://logback.qos.ch/codes.html#socket_no_port  http://logback.qos.ch/codes.html#socket_no_host,ch/qos/logback/core/net/AbstractSocketAppender.java
+http://logback.qos.ch/codes.html#syslog_layout,ch/qos/logback/core/net/SyslogAppenderBase.java
+http://logback.qos.ch/codes.html#smtp_no_layout,ch/qos/logback/core/net/SMTPAppenderBase.java
+http://logback.qos.ch/css/classic.css,ch/qos/logback/classic/html/UrlCssBuilder.java
+http://logback.qos.ch/codes.html#receiver_no_port  http://logback.qos.ch/codes.html#receiver_no_host,ch/qos/logback/classic/net/SocketReceiver.java
+"https://fabric.io/sign_up,",com/crashlytics/android/core/CrashlyticsCore.java
+file:///android_asset/,com/bumptech/glide/load/model/AssetUriLoader.java
+data:image,com/bumptech/glide/load/model/DataUrlLoader.java
+http://play.google.com/store/apps/details?id=,com/unibail/ui/activity/ContainerActivity.java
+https://s3-eu-west-1.amazonaws.com/unibail-proxy-content-production/menus/ico_services.png  https://s3-eu-west-1.amazonaws.com/unibail-proxy-content-production/menus/ico_informations.png,com/unibail/ui/adapter/MultipleSearchAdapter.java
+http://schemas.xmlsoap.org/soap/envelope/,com/unibail/datas/bean/giftCard/ConsultCardInfoResponseEnvelope.java
+http://webserver.n3p.prosodie.com/publicwebservices/,com/unibail/datas/bean/giftCard/ConsultHistoryResponseBody.java
+http://schemas.xmlsoap.org/soap/envelope/,com/unibail/datas/bean/giftCard/ConsultHistoryResponseEnvelope.java
+http://schemas.xmlsoap.org/soap/envelope/  http://webserver.n3p.prosodie.com/publicwebservices/,com/unibail/datas/bean/giftCard/ConsultHistoryRequestEnvelope.java
+http://schemas.xmlsoap.org/soap/envelope/  http://webserver.n3p.prosodie.com/publicwebservices/,com/unibail/datas/bean/giftCard/ConsultCardInfoRequestEnvelope.java
+http://webserver.n3p.prosodie.com/publicwebservices/,com/unibail/datas/bean/giftCard/ConsultCardInfoResponseBody.java
+https://s3-us-west-1.amazonaws.com  http://s3.amazonaws.com/doc/2006-03-01/,com/amazonaws/services/s3/AmazonS3Client.java
+http://s3.amazonaws.com/doc/2006-03-01/,com/amazonaws/services/s3/internal/Constants.java
+http://www.ngs.ac.uk/tools/jcepolicyfiles,com/amazonaws/services/s3/internal/crypto/EncryptionUtils.java
+http://acs.amazonaws.com/groups/global/allusers  http://acs.amazonaws.com/groups/global/authenticatedusers  http://acs.amazonaws.com/groups/s3/logdelivery,com/amazonaws/services/s3/model/GroupGrantee.java
+http://s3.amazonaws.com/doc/2006-03-01/,com/amazonaws/services/s3/model/transform/BucketConfigurationXmlFactory.java
+http://www.w3.org/2001/xmlschema-instance  http://s3.amazonaws.com/doc/2006-03-01/,com/amazonaws/services/s3/model/transform/AclXmlFactory.java
+http://s3.amazonaws.com/doc/2006-03-01/,com/amazonaws/services/s3/model/transform/RequestPaymentConfigurationXmlFactory.java
+www.amazon.com,com/amazonaws/auth/policy/Principal.java
+http://mindprod.com,com/mindprod/ledatastream/LEDataInputStream.java
+http://www.w3.org/2001/xmlschema-instance  http://socialize-api.gigya.com/schema,com/gigya/socialize/GSResponse.java
+javascript:%s  javascript:%s(%s);,com/gigya/socialize/android/GSWebBridge.java
+http://gscounters.%s/gs/api.ashx?%s,com/gigya/socialize/android/GSAPI.java
+http://cdn.gigya.com/js/gigya.js?apikey=%s'  http://www.gigya.com,com/gigya/socialize/android/GSPluginFragment.java
+"https://www.googleapis.com/auth/plus.login,https://www.googleapis.com/auth/userinfo.email",com/gigya/socialize/android/login/providers/GoogleProvider.java
+https://consumer.exacttargetapis.com  https://{env}app.igodigital.com,com/salesforce/marketingcloud/c.java
+https://consumer.exacttargetapis.com,com/salesforce/marketingcloud/messages/cloudpage/e.java
+https://consumer.exacttargetapis.com,com/salesforce/marketingcloud/messages/cloudpage/c.java
+https://consumer.exacttargetapis.com,com/salesforce/marketingcloud/messages/proximity/c.java
+https://consumer.exacttargetapis.com,com/salesforce/marketingcloud/messages/geofence/c.java
+https://{env}app.igodigital.com,com/salesforce/marketingcloud/analytics/b/r.java
+https://consumer.exacttargetapis.com,com/salesforce/marketingcloud/analytics/a/b.java
+https://consumer.exacttargetapis.com,com/salesforce/marketingcloud/registration/e.java
+https://consumer.exacttargetapis.com/device/v1/registration,com/salesforce/marketingcloud/registration/RegistrationManager.java
+https://metrics.brightcove.com/v2/tracker,com/brightcove/player/analytics/Analytics.java
+https://api.brightcove.com/services/library  https://api.brightcove.co.jp/services/library,com/brightcove/player/media/MediaService.java
+https://edge.api.brightcove.com/playback/v1,com/brightcove/player/edge/Catalog.java
+http://www.w3.org/xml/1998/namespace  http://www.w3.org/ns/ttml#styling  http://xmlpull.org/v1/doc/features.html#process-namespaces  http://www.w3.org/ns/ttml#metadata,com/brightcove/player/captioning/TTMLParser.java

@@ -15,6 +15,8 @@ def search_blacklist(blacklist, list_to_check):
         if element in list_to_check:
             if (element == "ALTBEACON"):
                 element = "ANDROID BEACON LIBRARY"
+            if(element == 'ZXING ("ZEBRA CROSSING")'):
+                element = 'ZXING'
             coincidencias.append(element)
     return coincidencias
 

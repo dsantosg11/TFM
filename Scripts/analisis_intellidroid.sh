@@ -10,6 +10,14 @@ COUNTER=0
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
+# Funcion auxiliar para timeout
+doalarm () {
+    perl -e 'alarm shift; exec @ARGV' "$@";
+    echo 'Proceso interrumpido por timeout. Generando archivo vacío de targets...';
+    RUTA_JSON=$DIRECTORY_OUTPUT/$NOMBRE/appInfo.json
+    [ -f $RUTA_JSON ] || echo "{}" > $RUTA_JSON
+} 
+
 for d in $(ls -d $DIRECTORY_JARS/*/) ; do
     cd $d
     NOMBRE=$(basename $d*/)
@@ -18,7 +26,8 @@ for d in $(ls -d $DIRECTORY_JARS/*/) ; do
     COUNTER=$((COUNTER+1))
     echo "Obteniendo los targets mediante el análisis de Intellidroid de la app $NOMBRE"
     mkdir $DIRECTORY_OUTPUT/$NOMBRE
-    ./IntelliDroidAppAnalysis -o $DIRECTORY_OUTPUT/$NOMBRE -t taintdroidTargets.txt -y $d
+    doalarm 200 ./IntelliDroidAppAnalysis -o $DIRECTORY_OUTPUT/$NOMBRE -t taintdroidTargets.txt -y $d
+    
     cd $DIRECTORY_JARS
 done
 
@@ -29,10 +38,11 @@ cd $DIRECTORY_OUTPUT
 for dir in $(ls -d $DIRECTORY_OUTPUT/*/) ; do
     cd $dir
     for i in $(ls | egrep -i 'appInfo.json'); do
-        NOMBRE="$(basename $d).json"
+        NOMBRE="$(basename $dir).json"
         mv $i $NOMBRE
         cp $NOMBRE $DIRECTORY_TARGETS 
     done
 done
 
 echo "Proceso finalizado."
+exit
