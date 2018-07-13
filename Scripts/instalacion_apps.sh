@@ -1,5 +1,5 @@
 #!/bin/sh
-DIRECTORY_APKS=/home/david/Tools/Apks
+DIRECTORY_APKS=/Users/dass/Tools/Preprocessed_Apks
 
 cd $DIRECTORY_APKS
 COUNTER=0

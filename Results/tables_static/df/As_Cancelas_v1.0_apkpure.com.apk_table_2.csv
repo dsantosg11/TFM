@@ -1,3 +1,0 @@
-ISSUE,SEVERITY,DESCRIPTION
-Application Data can be Backed up[android:allowBackup=true],medium,This flag allows anyone to backup your application data via adb. It allows users who have enabled USB debugging to copy application data off of the device.
-Broadcast Receiver (com.google.android.gms.measurement.AppMeasurementReceiver) is not Protected.An intent-filter exists.,high,A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Broadcast Receiver is explicitly exported.

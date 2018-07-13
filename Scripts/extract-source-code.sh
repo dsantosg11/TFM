@@ -25,16 +25,16 @@ for i in $(ls | egrep -i '*\.apk'); do
     echo "Extraida lista de bibliotecas que utiliza"
     NOMBRE="$NOMBRE-jadx";
     cd $DIRECTORY_SCRIPTS_DECOMPILE;
-    doalarm 600 sh ./jadx-apk.sh $DIRECTORY_APKS/$i > $DIRECTORY_RESULTS/logs/log-$NOMBRE.txt;
+    doalarm 600 sh ./jadx-apk.sh $DIRECTORY_APKS/$i &> $DIRECTORY_RESULTS/logs/log-$NOMBRE.txt;
     #expect -c 'set echo \"-noecho\"; set timeout $time; spawn -noecho $command; expect timeout { exit 1 } eof { exit 0 }'
     echo "Extraido el codigo fuente de la app"
     mv $DIRECTORY_OUTPUT/$NOMBRE $DIRECTORY_SOURCE_CODE/$NOMBRE;
     cd $DIRECTORY_SOURCE_CODE
     python $DIRECTORY_SCRIPTS/get_permissions.py $NOMBRE > $DIRECTORY_RESULTS/permisos/permisos_$NOMBRE.txt;
     echo "Extraida lista de permisos que necesita"
-    echo "Se termina de procesar la aplicacion $i. Se mueve el archivo a preprocesadas."
+    echo "Se termina de pre-procesar la aplicacion $i. Se mueve el archivo a preprocesadas."
     cd $DIRECTORY_APKS
     mv $i $DIRECTORY_PREP_APKS;
 done
 
-echo "Procesadas $COUNTER aplicaciones. Proceso finalizado"
+echo "Procesadas $COUNTER aplicaciones y obtenido el código fuente, librerías y permisos. Pasando al análisis del código..."

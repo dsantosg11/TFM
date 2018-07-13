@@ -1,4 +1,0 @@
-ACTIVITY,INTENT
-com.unibail.ui.activity.SplashActivity,"Schemes: @string/app_scheme://,"
-com.gigya.socialize.android.login.providers.WebLoginActivity,"Schemes: com.unibail.maquinista://,  Hosts: gsapi,"
-com.google.android.gms.tagmanager.TagManagerPreviewActivity,"Schemes: tagmanager.c.com.unibail.maquinista://,"

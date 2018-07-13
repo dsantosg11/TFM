@@ -164,51 +164,67 @@ def create_document(nombre_app, permisos, librerias, imagenes, dataframes, intel
     # Targets de Intellidroid
     document.add_heading('Caminos y comportamientos que provocan filtraciones en código', level=1)
     document.add_paragraph('Información extraída mediante el análisis estático de Intellidroid', style='IntenseQuote')
-    document.add_paragraph('Las aplicaciones que producen filtraciones sólo las llevan a cabo en partes determinadas del código, y si el análisis o el manejo del usuario no incurre en esa parte, no detectará la filtración. Esta parte del análisis busca vulnerabilidades en el código y muestra el camino de llamadas de la aplicación y comportamiento que permite incurrir en la vulnerabilidad que puede ocasionar la filtración de información. También nos ilustra sobre el tipo de filtración que se está llevando a cabo.')
+    document.add_paragraph('Las aplicaciones que producen filtraciones sólo las llevan a cabo en partes determinadas del código, y si el análisis o el manejo del usuario no incurre en esa parte, no detectará la filtración. Esta parte del análisis busca vulnerabilidades en el código y muestra el camino de llamadas de la aplicación y comportamiento que permite incurrir en la vulnerabilidad que puede ocasionar la filtración de información. También nos ilustra sobre el tipo de filtración que se está llevando a cabo. Este apartado está pensado para que usted si lo desea siga el camino con las restricciones marcadas para detectar la posible filtración, sea visualmente o con una herramienta de análisis dinámico que lo automatice.')
+    document.add_paragraph('AVISO: Si la aplicación tiene muchos caminos de vulnerabilidades, en este apartado pueden figurar muchas tablas que ocupen muchas páginas.')
     
     if intellidroid != {}:
         for i in intellidroid['callPaths']:
-            document.add_paragraph('Camino de llamadas (call path) número {}:'.format(i), style='ListBullet')
-            document.add_paragraph('Método que lo inicia: ')
-            document.add_paragraph (intellidroid['callPaths'][i]['startMethod'])
-            document.add_paragraph ('Método objetivo: ')
-            document.add_paragraph (intellidroid['callPaths'][i]['targetMethod'])
-            document.add_paragraph ('Cadena de eventos: ')
-            document.add_paragraph ('\n')
+            document.add_paragraph('Camino de llamadas (call path) número {}:'.format(i), style='ListBullet').paragraph_format.left_indent = Inches(0.25)
+            document.add_paragraph('Método que lo inicia: '+intellidroid['callPaths'][i]['startMethod']).paragraph_format.left_indent = Inches(0.25)
+            document.add_paragraph ('Método objetivo: '+intellidroid['callPaths'][i]['targetMethod']).paragraph_format.left_indent = Inches(0.25)
+            document.add_paragraph ('Cadena de eventos: ').paragraph_format.left_indent = Inches(0.25)
             for idx, val in enumerate(intellidroid['callPaths'][i]['eventChain']):
-                document.add_paragraph ('Evento {}: '.format(idx))
-                document.add_paragraph ('Start: ')
-                document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['start'])
-                document.add_paragraph ('Target: ')
-                document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['target'])
-                document.add_paragraph ('Type: ')
-                document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['type'])
+                columna_izda = []
+                columna_dcha = []
+                columna_izda.append ('Número de evento: ')
+                columna_dcha.append ('Evento {}'.format(idx))
+                columna_izda.append ('Inicio: ')
+                columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['start'])
+                columna_izda.append ('Objetivo: ')
+                columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['target'])
+                columna_izda.append ('Tipo de actividad: ')
+                columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['type'])
                 try:
-                    document.add_paragraph ('Archivo de restricciones asociado: ')
-                    document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['constraintsFile'])
+                    columna_izda.append ('Archivo de restricciones necesarias para el camino: ')
+                    columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['constraintsFile'])
                 except:
-                    document.add_paragraph ('No hay archivo de restricciones asociado.')
+                    columna_dcha.append ('No hay archivo de restricciones asociado.')
                     pass
                 try:
-                    document.add_paragraph ('Component: ')
-                    document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['component'])
+                    columna_izda.append ('Componente: ')
+                    columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['component'])
                 except:
-                    document.add_paragraph ('No hay component.')
+                    columna_dcha.append ('No hay componente.')
                     pass
                 try:
-                    document.add_paragraph ('Variables: ')
-                    document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['variables'])
+                    columna_izda.append ('Variables involucradas: ')
+                    columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['variables'])
                 except:
-                    document.add_paragraph ('No hay variables.')
+                    columna_dcha.append ('No hay variables.')
                     pass
                 try:
-                    document.add_paragraph ('Strings: ')
-                    document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['strings'])
-                    document.add_paragraph ('Mapa de Strings: ')
-                    document.add_paragraph (intellidroid['callPaths'][i]['eventChain'][idx]['stringMap'])
+                    columna_izda.append ('Strings manejados: ')
+                    columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['strings'])
                 except:
-                    document.add_paragraph ('No hay strings o mapa de los mismos.')
+                    columna_dcha.append ('No hay strings.')
                     pass
+                try:
+                    columna_izda.append ('Mapa de Strings manejados: ')
+                    columna_dcha.append (intellidroid['callPaths'][i]['eventChain'][idx]['stringMap'])
+                except:
+                    columna_dcha.append ('No hay mapa de strings.')
+                    pass
+                table_in = document.add_table(rows = 1, cols = 2)
+                table_in.autofit = True
+                table_in.style = 'Table Grid'
+                hdr_cells = table_in.rows[0].cells
+                hdr_cells[0].text = 'Item'
+                hdr_cells[1].text = 'Valor'
+                for idx in range(0,len(columna_izda)):
+                    row_cells = table_in.add_row().cells
+                    row_cells[0].text = str(columna_izda[idx])
+                    row_cells[1].text = str(columna_dcha[idx])
+                document.add_paragraph ('\n')
     
     # Código fuente
     document.add_heading('Código fuente', level=1)
@@ -231,6 +247,7 @@ def create_document(nombre_app, permisos, librerias, imagenes, dataframes, intel
 
     document.save(ruta_informes+'Informe_{}.docx'.format(nombre_app))
 
+    
 if __name__ == '__main__':
     # We get the apps list
     with open(path_textfile) as f:

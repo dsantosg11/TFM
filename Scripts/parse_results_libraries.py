@@ -4,6 +4,7 @@ import sys
 import shutil
 
 directory_processing = '/Users/dass/Tools/Results/librerias/processing_info/'
+directory_blacklist = '/Users/dass/Tools/Results/librerias/blacklist/'
 directory_names = '/Users/dass/Tools/Results/librerias/processing_info/names'
 directory_packages = '/Users/dass/Tools/Results/librerias/processing_info/packages'
 
@@ -47,7 +48,7 @@ if __name__ == '__main__':
             continue
         coincidencias_nombres = check_files_directory(directory_names, filename)
         coincidencias_paquetes = check_files_directory(directory_packages,filename)
-        path_to_write= directory_processing+filename[:-4]+'.csv'
+        path_to_write= directory_blacklist+filename[:-4]+'.csv'
         with open(path_to_write,'w+') as fi:
             fi.write( ','.join(list((set(coincidencias_nombres+coincidencias_paquetes)))))
             fi.close()

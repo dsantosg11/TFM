@@ -113,3 +113,27 @@ Mon, 02 Jul 2018 15:22:48 literadar.py[line:182] DEBUG Extracting /Users/dass/To
 Mon, 02 Jul 2018 15:23:40 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/9fa2fd1ee1640cfc73eef3ac82feb257f773f9c290bcf310b462559deaa5e5cd/classes2.dex
 Mon, 02 Jul 2018 17:54:44 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/Lumen_Privacy_Monitor_v2.2_apkpure.com.apk's MD5 is 38f7ec2f4e90760cac8b264b7752056b98b821788f06a46ebd72ec6d54e6cfad
 Mon, 02 Jul 2018 17:54:44 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/38f7ec2f4e90760cac8b264b7752056b98b821788f06a46ebd72ec6d54e6cfad/classes.dex
+Thu, 12 Jul 2018 03:09:15 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/LaMaquinista_v5.16.1_apkpure.com.apk's MD5 is fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495
+Thu, 12 Jul 2018 03:09:15 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495/classes.dex
+Thu, 12 Jul 2018 03:09:49 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495/classes2.dex
+Thu, 12 Jul 2018 03:10:23 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495/classes3.dex
+Thu, 12 Jul 2018 03:20:09 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/As_Cancelas_v1.0_apkpure.com.apk's MD5 is 4c12ee1252a2501583d58b6428ba4efbc38ffffce7492e36074749585d1cf247
+Thu, 12 Jul 2018 03:20:09 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/4c12ee1252a2501583d58b6428ba4efbc38ffffce7492e36074749585d1cf247/classes.dex
+Thu, 12 Jul 2018 03:21:19 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/LaMaquinista_v5.16.1_apkpure.com.apk's MD5 is fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495
+Thu, 12 Jul 2018 03:21:19 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495/classes.dex
+Thu, 12 Jul 2018 03:21:52 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495/classes2.dex
+Thu, 12 Jul 2018 03:22:25 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/fad802689358d34854b5120206f79f7296b1f6223e5abf920f6d05d8418e7495/classes3.dex
+Fri, 13 Jul 2018 00:49:01 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/EMT_Madrid_v5.0.5_apkpure.com.apk's MD5 is 97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373
+Fri, 13 Jul 2018 00:49:01 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes.dex
+Fri, 13 Jul 2018 00:49:34 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes2.dex
+Fri, 13 Jul 2018 02:00:54 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/EMT_Madrid_v5.0.5_apkpure.com.apk's MD5 is 97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373
+Fri, 13 Jul 2018 02:00:54 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes.dex
+Fri, 13 Jul 2018 02:01:40 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/EMT_Madrid_v5.0.5_apkpure.com.apk's MD5 is 97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373
+Fri, 13 Jul 2018 02:01:40 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes.dex
+Fri, 13 Jul 2018 02:02:13 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes2.dex
+Fri, 13 Jul 2018 02:06:32 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/EMT_Madrid_v5.0.5_apkpure.com.apk's MD5 is 97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373
+Fri, 13 Jul 2018 02:06:32 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes.dex
+Fri, 13 Jul 2018 02:07:06 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes2.dex
+Fri, 13 Jul 2018 03:02:48 literadar.py[line:125] DEBUG APK /Users/dass/Tools/Apks/EMT_Madrid_v5.0.5_apkpure.com.apk's MD5 is 97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373
+Fri, 13 Jul 2018 03:02:48 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes.dex
+Fri, 13 Jul 2018 03:03:22 literadar.py[line:182] DEBUG Extracting /Users/dass/Tools/LibRadar/LiteRadar/LiteRadar/Data/Decompiled/97227f6a85202753e631e591775932ab148c36e807f3ba58ae6d27bb535ce373/classes2.dex

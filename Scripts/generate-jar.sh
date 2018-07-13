@@ -3,6 +3,7 @@ DIRECTORY_CODE=/Users/dass/Tools/IntelliDroid/AppAnalysis
 DIRECTORY_SCRIPTS=/Users/dass/Tools/Scripts
 DIRECTORY_JARS=/Users/dass/Tools/jars
 DIRECTORY_PREP_APKS=/Users/dass/Tools/Preprocessed_Apks
+DIRECTORY_RESULTS=/Users/dass/Tools/Results
 
 cp -a $DIRECTORY_PREP_APKS/. $DIRECTORY_JARS
 cd $DIRECTORY_JARS
@@ -13,10 +14,8 @@ find . -type f -name "* *.apk" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
 for i in $(ls | egrep -i '*\.apk'); do
     COUNTER=$((COUNTER+1))
     NOMBRE=${i%.*};
-    bash $DIRECTORY_CODE/preprocess/PreprocessAPK.sh $i;
-    bash $DIRECTORY_CODE/preprocess/PreprocessDataset.sh $NOMBRE;
+    bash $DIRECTORY_CODE/preprocess/PreprocessAPK.sh $i >> $DIRECTORY_RESULTS/logs/log-$NOMBRE.txt; 
+    bash $DIRECTORY_CODE/preprocess/PreprocessDataset.sh $NOMBRE >> $DIRECTORY_RESULTS/logs/log-$NOMBRE.txt;
 done
 
-COUNTER=$COUNTER/2
-
-echo "$COUNTER archivos procesados y convertidos en jars para Intellidroid. Proceso finalizado."
+echo "$COUNTER archivos procesados y convertidos en jars para Intellidroid. Comienza el análisis de Intellidroid..."

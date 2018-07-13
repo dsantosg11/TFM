@@ -26,7 +26,7 @@ for d in $(ls -d $DIRECTORY_JARS/*/) ; do
     COUNTER=$((COUNTER+1))
     echo "Obteniendo los targets mediante el análisis de Intellidroid de la app $NOMBRE"
     mkdir $DIRECTORY_OUTPUT/$NOMBRE
-    doalarm 200 ./IntelliDroidAppAnalysis -o $DIRECTORY_OUTPUT/$NOMBRE -t taintdroidTargets.txt -y $d
+    doalarm 200 ./IntelliDroidAppAnalysis -o $DIRECTORY_OUTPUT/$NOMBRE -t taintdroidTargets.txt -y $d 
     
     cd $DIRECTORY_JARS
 done
@@ -44,5 +44,5 @@ for dir in $(ls -d $DIRECTORY_OUTPUT/*/) ; do
     done
 done
 
-echo "Proceso finalizado."
+echo "Proceso de Intellidroid finalizado."
 exit
