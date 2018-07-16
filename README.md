@@ -1,6 +1,6 @@
 # TFM
 
-Esta herramienta permite obtener un informe completo sobre fugas de privacidad incurridas en aplicaciones móviles. Para utilizarla no hace falta más que instalar los requerimientos y ejecutar el script "analisis_apps.sh" de la carpeta de Scripts. Está pensado para un sistema OS X, aunque su adaptación a Ubuntu es inmediata.
+Esta herramienta permite obtener un informe completo sobre fugas de privacidad incurridas en aplicaciones móviles. Para utilizarla no hace falta más que instalar los requerimientos y ejecutar el script "analisis_apps.sh" de la carpeta de Scripts (bash Tools/Scripts/analisis_apps.sh). Está pensado para un sistema OS X, aunque su adaptación a Ubuntu es inmediata.
 
 Si desea obtener resultados del análisis dinámico con la aplicación Lumen (el script le preguntará si desea hacerlo), es necesario que disponga de un terminal móvil Android que conectará por USB al ordenador y al que accederá mediante la herramienta adb del SDK de Android.
 
