@@ -59,8 +59,9 @@ echo "Obtenidos resultados de MobSF"
 
 # Recolección de resultados de Intellidroid
 echo "Comienza el análisis con Intellidroid..."
-bash ./generate-jar.sh
-bash ./analisis_intellidroid.sh
+osascript -e 'tell app "Terminal"
+    do script "cd /Users/dass/Tools/Scripts; bash ./generate-jar.sh; bash ./analisis_intellidroid.sh;"
+end tell'
 
 #Preguntamos al usuario si desea realizar la parte de Lumen
 while true; do

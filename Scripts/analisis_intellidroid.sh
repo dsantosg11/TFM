@@ -26,8 +26,13 @@ for d in $(ls -d $DIRECTORY_JARS/*/) ; do
     COUNTER=$((COUNTER+1))
     echo "Obteniendo los targets mediante el análisis de Intellidroid de la app $NOMBRE"
     mkdir $DIRECTORY_OUTPUT/$NOMBRE
-    doalarm 200 ./IntelliDroidAppAnalysis -o $DIRECTORY_OUTPUT/$NOMBRE -t taintdroidTargets.txt -y $d 
-    
+    if doalarm 500 ./IntelliDroidAppAnalysis -o $DIRECTORY_OUTPUT/$NOMBRE -t taintdroidTargets.txt -y $d; then
+        echo "Jar generado con éxito. Obteniendo targets."
+    else
+        echo 'Proceso interrumpido por error en el procesamiento de Intellidroid. Generando archivo vacío de targets...';
+        RUTA_JSON=$DIRECTORY_OUTPUT/$NOMBRE/appInfo.json
+        [ -f $RUTA_JSON ] || echo "{}" > $RUTA_JSON
+    fi
     cd $DIRECTORY_JARS
 done
 
