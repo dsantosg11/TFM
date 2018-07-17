@@ -6,7 +6,7 @@ import json
 
 ruta_informes='/Users/dass/Tools/Results/Informes/'
 ruta_permisos = '/Users/dass/Tools/Results/permisos/'
-ruta_librerias = '/Users/dass/Tools/Results/librerias/processing_info/'
+ruta_librerias = '/Users/dass/Tools/Results/librerias/blacklist/'
 ruta_imagenes = '/Users/dass/Tools/Results/tables_static/images/'
 ruta_dfs = '/Users/dass/Tools/Results/tables_static/df/'
 ruta_jsons = '/Users/dass/Tools/Results/targets/'
